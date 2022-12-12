@@ -10,8 +10,8 @@ const Projects = ({ mode }) => {
       name: "Todo",
       title: "React Todo App",
       description:
-        "Todo list app with drag and drop feature, made with React JS (ver.18). Includes additional dependencies such as dnd-kit, react-icons, react-confetti, react-textarea-autosize, react-use, react-tooltip.",
-      stack: "React, Javascript, CSS modules, Create React App",
+        "Todo list app with drag and drop feature, made with React JS (ver.18). Includes integration with Bored API and additional dependencies such as dnd-kit, react-icons, react-confetti, react-textarea-autosize, react-use, react-tooltip.",
+      stack: "React, Javascript, CSS modules, Bored API, Create React App",
       img: (
         <img
           src={!mode ? Todo : TodoDark}
