@@ -2,8 +2,12 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  row-gap: 34px;
-  column-gap: 56px;
+  row-gap: 2rem;
+  column-gap: 2rem;
 }
 
+
+@media screen and (max-width: 400px) {
+
+}
 
