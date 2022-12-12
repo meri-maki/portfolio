@@ -1,0 +1,11 @@
+.contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  row-gap: 18px;
+  margin-top: 2rem;
+}
+
+.contacts a{
+  width: max-content;
+}

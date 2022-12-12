@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap");
+
+:root {
+  --c-pink: #f3afa8;
+  --c-red: #c85454;
+  --c-black: #2d2d2d;
+  --c-light-black: #363636;
+  --c-grey: #fcfcfc;
+  --c-green: #009379;
+  --c-light-pink: #ffe8e5;
+
+  font-family: Epilogue, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+
+  /*   font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 1.7rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 1.7rem;
+}
+h3 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+p {
+  margin-bottom: 1.7rem;
+}
+
+@media screen and (max-width: 1240px) {
+  :root {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h1 {
+    font-size: 2.375rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 841px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.6rem;
+
+  }
+}

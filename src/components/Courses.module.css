@@ -1,0 +1,17 @@
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  row-gap: 1.7rem;
+  column-gap: 2.8rem;
+}
+
+.courses > * {
+  max-width: 11rem;
+}
+
+@media screen and (max-width: 841px) {
+  .courses > * {
+    max-width: none;
+  }
+}

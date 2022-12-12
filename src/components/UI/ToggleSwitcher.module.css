@@ -1,0 +1,57 @@
+.switchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+.switchCheckbox {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+.switchLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 40px;
+  height: 23px;
+  background: var(--c-pink);
+  border-radius: 100px;
+  position: relative;
+  transition: background-color 0.2s;
+  margin-bottom: 6px;
+}
+
+.switchLabelDark {
+  background: var(--c-green);
+}
+
+.switchLabel .switchButton {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.switchCheckbox:checked + .switchLabel .switchButton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switchLabel:active .switchButton {
+  width: 25px;
+}
+
+.switchTextLabel {
+  margin-left: 9px;
+  width: 47px;
+}

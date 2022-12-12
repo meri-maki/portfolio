@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.8rem 1.1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+  margin-right: 1.6rem;
+}
+
+.button:last-of-type {
+  margin-right: 0;
+}
+
+.green {
+  background: var(--c-green);
+  color: white !important;
+}
+
+.pink {
+  background: var(--c-light-pink);
+  color: var(--c-black) !important;
+}
+
+.pink:hover {
+  background: rgb(255, 216, 209);
+}
+
+.green:hover {
+  background: rgb(21, 99, 85);
+}
+
+.pink:active {
+  transform: scale(0.95);
+}
+
+.green:active {
+  transform: scale(0.95);
+}
+
+.submit {
+  justify-content: center !important;
+}

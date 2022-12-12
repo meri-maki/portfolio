@@ -1,0 +1,41 @@
+.iconCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+}
+
+.noLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 220px;
+}
+
+.iconCard h3 {
+  margin-bottom: 0;
+}
+
+.icon {
+  font-size: 2.1rem;
+  margin-right: 0.4em;
+  color: var(--c-green);
+}
+
+/* .icon:nth-of-type(2n+1) {
+  color: var(--c-green);
+} */
+
+.iconCard:nth-of-type(2n + 1) .icon {
+  color: var(--c-red);
+}
+
+.noLink:nth-of-type(2n + 1) .icon {
+  color: var(--c-red);
+}
+
+@media screen and (max-width: 841px) {
+  .noLink {
+    width: 120px;
+  }
+}

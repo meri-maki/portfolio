@@ -1,0 +1,9 @@
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  row-gap: 34px;
+  column-gap: 56px;
+}
+
+

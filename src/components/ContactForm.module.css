@@ -1,0 +1,64 @@
+.contactForm {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  flex: 0 2 581px;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex: 0 2 581px;
+}
+
+input,
+textarea {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--c-green);
+  border-radius: 6px;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  background-color: inherit;
+  transition: all 0.1s ease-in-out;
+}
+
+label {
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--c-green);
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--c-green);
+  background-color: #fff;
+}
+
+.contactFormArea textarea {
+  padding: 0.5rem 2.2rem;
+}
+
+.contactFormButton {
+  align-items: center !important;
+}
+
+.contactFormDark > input:focus,
+.contactFormDark > textarea:focus {
+  background-color: var(--c-light-black);
+}
+
+.contactFormLight > input:focus,
+.contactFormLight > textarea:focus {
+  background-color: var(--c-grey);
+}
+
+p.messageSent {
+  margin-top: 1rem;
+  
+}
