@@ -1,8 +1,10 @@
 import ProjectCard from "./UI/ProjectCard"
 import Todo from "../assets/todo.png"
-import Ingrad from "../assets/ingrad.png"
 import TodoDark from "../assets/todo-dark.png"
+import Ingrad from "../assets/ingrad.png"
 import IngradDark from "../assets/ingrad-dark.png"
+import Portfolio from "../assets/portfolio.png"
+import PortfolioDark from "../assets/portfolio-dark.png"
 
 const Projects = ({ mode }) => {
   const projects = [
@@ -10,7 +12,7 @@ const Projects = ({ mode }) => {
       name: "Todo",
       title: "React Todo App",
       description:
-        "Todo list app with drag and drop feature, made with React JS (ver.18). Includes integration with Bored API and additional dependencies such as dnd-kit, react-icons, react-confetti, react-textarea-autosize, react-use, react-tooltip.",
+        "Todo list app with drag and drop feature and local storage, made with React JS (ver.18). Includes integration with Bored API and additional dependencies such as dnd-kit, react-icons, react-confetti, react-textarea-autosize, react-use, react-tooltip.",
       stack: "React, Javascript, CSS modules, Bored API, Create React App",
       img: (
         <img
@@ -39,16 +41,16 @@ const Projects = ({ mode }) => {
     {
       name: "Portfolio",
       title: "Personal Portfolio Website",
-      description: "React based portfolio website made with Vite build tool.",
+      description: "React based portfolio website made with React JS (ver.18) and Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs.",
       stack: "React, Javascript, CSS modules, Vite",
       img: (
         <img
-          src={!mode ? Ingrad : IngradDark}
-          alt="Ingrad website view on different devices"
+          src={!mode ? Portfolio : PortfolioDark}
+          alt="Portfolio website view on different devices"
         />
       ),
-      mainLink: "",
-      gitLink: "",
+      mainLink: "https://ana-zhuravleva-portfolio.vercel.app/",
+      gitLink: "https://github.com/meri-maki/portfolio",
     },
   ]
   return projects.map((project) => {

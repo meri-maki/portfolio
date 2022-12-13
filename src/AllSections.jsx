@@ -29,7 +29,7 @@ const AllSections = ({ mode }) => {
               <Button color="pink">Contact me</Button>
             </Link>
             <a
-              href="../assets/Anastasia-Zhuravleva-CV-eng.pdf"
+              href="../public/Anastasia-Zhuravleva-CV-eng.pdf"
               target="_blank"
               download
             >
@@ -59,14 +59,14 @@ const AllSections = ({ mode }) => {
             </p>
             <div className="button-container">
               <a
-                href="../assets/Anastasia-Zhuravleva-CV-eng.pdf"
+                href="../public/Anastasia-Zhuravleva-CV-eng.pdf"
                 target="_blank"
                 download
               >
                 <Button color="green">CV ENG</Button>
               </a>
               <a
-                href="../assets/Anastasia-Zhuravleva-CV-RUS.pdf"
+                href="../public/Anastasia-Zhuravleva-CV-RUS.pdf"
                 target="_blank"
                 download
               >
