@@ -14,12 +14,16 @@ const ProjectCard = ({ title, description, stack, img, mainLink, gitLink }) => {
           <span className={styles.descriptionStack}>STACK</span>: {stack}
         </p>
         <div className={styles.descriptionButtonContainer}>
-          <a href={mainLink} target="_blank">
-            <Button color="pink">Visit Website</Button>
-          </a>
-          <a href={gitLink} target="_blank">
-            <Button>Show Git Repo</Button>
-          </a>
+          {mainLink && (
+            <a href={mainLink} target="_blank">
+              <Button color="pink">Visit Website</Button>
+            </a>
+          )}
+          {gitLink && (
+            <a href={gitLink} target="_blank">
+              <Button>Show Git Repo</Button>
+            </a>
+          )}
         </div>
       </div>
     </div>

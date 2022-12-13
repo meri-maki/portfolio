@@ -5,6 +5,8 @@ import Ingrad from "../assets/ingrad.png"
 import IngradDark from "../assets/ingrad-dark.png"
 import Portfolio from "../assets/portfolio.png"
 import PortfolioDark from "../assets/portfolio-dark.png"
+import Spacex from "../assets/spacex.png"
+import SpacexDark from "../assets/spacex-dark.png"
 
 const Projects = ({ mode }) => {
   const projects = [
@@ -41,7 +43,8 @@ const Projects = ({ mode }) => {
     {
       name: "Portfolio",
       title: "Personal Portfolio Website",
-      description: "React based portfolio website made with React JS (ver.18) and Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs.",
+      description:
+        "React based portfolio website made with Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs.",
       stack: "React, Javascript, CSS modules, Vite",
       img: (
         <img
@@ -51,6 +54,21 @@ const Projects = ({ mode }) => {
       ),
       mainLink: "https://ana-zhuravleva-portfolio.vercel.app/",
       gitLink: "https://github.com/meri-maki/portfolio",
+    },
+    {
+      name: "SpaceX",
+      title: "SpaceX Dashboard App [IN PROGRESS]",
+      description:
+        "React based SpaceX dashboard app made with Vite build tool and SpaceX API.",
+      stack: "React, Redux, Javascript, CSS modules, Vite, SpaceX API",
+      img: (
+        <img
+          src={!mode ? Spacex : SpacexDark}
+          alt="SpaceX webapp view on different devices"
+        />
+      ),
+      mainLink: "",
+      gitLink: "",
     },
   ]
   return projects.map((project) => {
