@@ -29,9 +29,9 @@ const AllSections = ({ mode }) => {
               <Button color="pink">Contact me</Button>
             </Link>
             <a
-              href="../public/Anastasia-Zhuravleva-CV-eng.pdf"
+              href="Anastasia-Zhuravleva-CV-eng.pdf"
               target="_blank"
-              download
+              download="Anastasia-Zhuravleva-CV-eng.pdf"
             >
               <Button color="green">Download CV</Button>
             </a>
