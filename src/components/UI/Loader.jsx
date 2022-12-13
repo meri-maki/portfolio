@@ -1,19 +1,10 @@
-import styles from './Loader.module.css'
+import styles from "./Loader.module.css"
 
 const Loader = () => {
   return (
-    <div className={styles.loader}>
-  <span>L</span>
-  <span>O</span>
-  <span>A</span>
-  <span>D</span>
-  <span>I</span>
-  <span>N</span>
-  <span>G</span>
-  <span>.</span>
-  <span>.</span>
-  <span>.</span>
-</div>
+    <div className={styles.loaderContainer}>
+      <div className={styles.loader}></div>
+    </div>
   )
 }
 

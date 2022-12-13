@@ -59,16 +59,16 @@ const AllSections = ({ mode }) => {
             </p>
             <div className="button-container">
               <a
-                href="../public/Anastasia-Zhuravleva-CV-eng.pdf"
+                href="Anastasia-Zhuravleva-CV-eng.pdf"
                 target="_blank"
-                download
+                download="Anastasia-Zhuravleva-CV-eng.pdf"
               >
                 <Button color="green">CV ENG</Button>
               </a>
               <a
-                href="../public/Anastasia-Zhuravleva-CV-RUS.pdf"
+                href="Anastasia-Zhuravleva-CV-RUS.pdf"
                 target="_blank"
-                download
+                download="Anastasia-Zhuravleva-CV-RUS.pdf"
               >
                 <Button color="pink">CV RUS</Button>
               </a>
