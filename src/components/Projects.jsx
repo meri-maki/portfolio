@@ -60,7 +60,8 @@ const Projects = ({ mode }) => {
       title: "SpaceX Dashboard App [IN PROGRESS]",
       description:
         "React based SpaceX dashboard app made with Vite build tool and SpaceX API.",
-      stack: "React, Redux, Javascript, CSS modules, Vite, SpaceX API",
+      stack:
+        "React, Redux, Javascript, CSS modules, styled-components, Vite, SpaceX API, Axios",
       img: (
         <img
           src={!mode ? Spacex : SpacexDark}
