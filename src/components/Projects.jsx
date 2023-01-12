@@ -7,9 +7,26 @@ import Portfolio from "../assets/portfolio.png"
 import PortfolioDark from "../assets/portfolio-dark.png"
 import Spacex from "../assets/spacex.png"
 import SpacexDark from "../assets/spacex-dark.png"
+import Weather from "../assets/weather.png"
+import WeatherDark from "../assets/weather-dark.png"
 
 const Projects = ({ mode }) => {
   const projects = [
+    {
+      name: "Weather",
+      title: "Typescript Weather Forecast App",
+      description:
+        "Weather Forecast app made with React and Typescript. Includes integration with OpenWeatherAPI and additional dependencies such as Tailwind CSS, Tailwind CSS Scrollbar.",
+      stack: "React, Typescript, OpenWeather API, Vite",
+      img: (
+        <img
+          src={!mode ? Weather : WeatherDark}
+          alt="Todo app view on different devices"
+        />
+      ),
+      mainLink: "https://ts-weather-app.vercel.app/",
+      gitLink: "https://github.com/meri-maki/ts-weather-app",
+    },
     {
       name: "Todo",
       title: "React Todo App",
