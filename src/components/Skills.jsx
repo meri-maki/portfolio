@@ -12,6 +12,9 @@ import {
   SiGit,
   SiJirasoftware,
   SiRedux,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiFramer,
 } from "react-icons/si"
 import { MdOutlineDevices } from "react-icons/md"
 import { TbApi } from "react-icons/tb"
@@ -28,7 +31,10 @@ const Skills = () => {
     { name: "React", icon: <RiReactjsLine /> },
     { name: "Router", icon: <SiReactrouter /> },
     { name: "Redux", icon: <SiRedux /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "Framer Motion", icon: <SiFramer /> },
 
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     { name: "Bootstrap", icon: <SiBootstrap /> },
     { name: "Responsive Websites", icon: <MdOutlineDevices /> },
     { name: "VS Code", icon: <SiVisualstudiocode /> },
@@ -42,7 +48,14 @@ const Skills = () => {
   return (
     <div className={styles.skills}>
       {skills.map((skill) => {
-        return <IconCard noLink icon={skill.icon} name={skill.name} key={skill.name} />
+        return (
+          <IconCard
+            noLink
+            icon={skill.icon}
+            name={skill.name}
+            key={skill.name}
+          />
+        )
       })}
     </div>
   )
