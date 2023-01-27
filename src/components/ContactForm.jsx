@@ -1,19 +1,19 @@
-import { useRef, useState, useEffect } from "react"
-import emailjs from "@emailjs/browser"
-import styles from "./ContactForm.module.css"
-import Button from "./UI/Button"
+import { useRef, useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
+import styles from './ContactForm.module.css'
+import Button from './UI/Button'
 
-const ContactForm = ({mode}) => {
+const ContactForm = ({ mode }) => {
   const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    message: "",
+    user_name: '',
+    user_email: '',
+    message: '',
   })
 
   const [formSent, setFormSent] = useState(false)
 
   useEffect(() => {
-    const temp = localStorage.getItem("formData")
+    const temp = localStorage.getItem('formData')
     const loadedFormData = JSON.parse(temp)
 
     if (loadedFormData) {
@@ -23,7 +23,7 @@ const ContactForm = ({mode}) => {
 
   useEffect(() => {
     const temp = JSON.stringify(formData)
-    localStorage.setItem("formData", temp)
+    localStorage.setItem('formData', temp)
   }, [formData])
 
   const handleChange = (event) => {
@@ -39,10 +39,10 @@ const ContactForm = ({mode}) => {
     e.preventDefault()
     emailjs
       .sendForm(
-        "service_v7ftwkw",
-        "template_g0pejbk",
+        'service_v7ftwkw',
+        'template_g0pejbk',
         form.current,
-        "YWYXaVn5QRM0wuaKd"
+        'YWYXaVn5QRM0wuaKd'
       )
       .then(
         (result) => {
@@ -53,16 +53,22 @@ const ContactForm = ({mode}) => {
         }
       )
     setFormData({
-      user_name: "",
-      user_email: "",
-      message: "",
+      user_name: '',
+      user_email: '',
+      message: '',
     })
     setFormSent(true)
   }
 
   return (
     <div className={styles.contactFormContainer}>
-      <form className={`${styles.contactForm} ${mode ? styles.contactFormDark : styles.contactFormLight}`} ref={form} onSubmit={sendEmail}>
+      <form
+        className={`${styles.contactForm} ${
+          mode ? styles.contactFormDark : styles.contactFormLight
+        }`}
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <label>Name</label>
         <input
           value={formData.user_name}
@@ -90,13 +96,17 @@ const ContactForm = ({mode}) => {
           className={styles.contactFormArea}
           name="message"
           rows="7"
-          placeholder="White something nice :)"
+          placeholder="Write something nice :)"
           required
         />
         <Button type="submit" value="Send">
           Submit
         </Button>
-        {formSent && <p className={styles.messageSent}>⭐️ Thank you for the message! I will respond shortly!</p>}
+        {formSent && (
+          <p className={styles.messageSent}>
+            ⭐️ Thank you for the message! I will respond shortly!
+          </p>
+        )}
       </form>
     </div>
   )
