@@ -11,9 +11,27 @@ import Weather from '../assets/weather.png'
 import WeatherDark from '../assets/weather-dark.png'
 import Metaverse from '../assets/metaverse.svg'
 import MetaverseDark from '../assets/metaverse-dark.svg'
+import Mern from '../assets/mern.svg'
+import MernDark from '../assets/mern-dark.svg'
 
 const Projects = ({ mode }) => {
   const projects = [
+    {
+      name: 'MERN',
+      title: 'MERN Stack Social App [LIMITED FUNCTIONALITY]',
+      description:
+        'Responsive MERN Stack Social network app with authorization and state management using React, MongoDB and Meterial UI',
+      stack:
+        'MERN: NodeJS, MongoDB, Mongoose, JsonWebToken, Multer, Yup, React, Redux Toolkit, React Persist, React Router, Formik, React Dropzone, MUI ',
+      img: (
+        <img
+          src={!mode ? Mern : MernDark}
+          alt="Social app view on different devices"
+        />
+      ),
+      mainLink: 'https://mern-social-frontend-po0n.onrender.com',
+      gitLink: 'https://github.com/meri-maki/MERN-social-FRONT',
+    },
     {
       name: 'Metaverse',
       title: 'Metaversus Landing Page',
