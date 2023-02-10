@@ -29,7 +29,7 @@ const Projects = ({ mode }) => {
           alt="Social app view on different devices"
         />
       ),
-      mainLink: 'https://mern-social-frontend-po0n.onrender.com',
+      mainLink: '',
       gitLink: 'https://github.com/meri-maki/MERN-social-FRONT',
     },
     {

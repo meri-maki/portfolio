@@ -1,19 +1,19 @@
-import { Link } from "react-scroll"
-import Button from "./components/UI/Button"
-import Section from "./components/UI/Section"
-import Skills from "./components/Skills"
-import Contacts from "./components/Contacts"
-import MainPhotoCollage from "./components/MainPhotoCollage"
-import Projects from "./components/Projects"
-import Courses from "./components/Courses"
-import ContactForm from "./components/ContactForm"
+import { Link } from 'react-scroll'
+import Button from './components/UI/Button'
+import Section from './components/UI/Section'
+import Skills from './components/Skills'
+import Contacts from './components/Contacts'
+import MainPhotoCollage from './components/MainPhotoCollage'
+import Projects from './components/Projects'
+import Courses from './components/Courses'
+import ContactForm from './components/ContactForm'
 
 const AllSections = ({ mode }) => {
   return (
     <>
       <Section size="big" mode={mode} id="about">
         <div className="section-about-text-block">
-          <h1>Hey✨ I’m Ana, Junior Frontend Developer</h1>
+          <h1>Hey✨ I’m Ana, Frontend Developer</h1>
           <p>
             I’m learning to code on Codecademy and YouTube. <br />
             I’m passionate about coding, contemporary art and archery.
