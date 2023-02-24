@@ -1,8 +1,4 @@
-import MainPhoto from '../assets/main-photo.png'
-import GraphicGroup from '../assets/graphic-group.png'
-import Graphic1 from '../assets/graphic1.svg'
-import Graphic2 from '../assets/graphic2.svg'
-import Graphic3 from '../assets/graphic3.svg'
+import GraphicGroup from '../assets/graphic-group-2.png'
 import styles from './MainPhotoCollage.module.css'
 
 const MainPhotoCollage = () => {
