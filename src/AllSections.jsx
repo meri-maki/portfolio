@@ -58,7 +58,7 @@ const AllSections = ({ mode }) => {
             <Section mode={mode} title="Courses & Certificates" size="small">
                 <Courses mode={mode} />
             </Section>
-            <Section mode={mode} title="Lets work together!" id="contact">
+            <Section mode={mode} title="Let's work together!" id="contact">
                 <div className="section-contacts">
                     <div className="section-contact-links">
                         <p>
