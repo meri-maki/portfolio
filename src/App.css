@@ -27,6 +27,10 @@
   align-items: center;
 }
 
+.bold-p {
+  font-weight: 600;
+}
+
 .button-container {
   display: flex;
   flex-flow: row wrap;

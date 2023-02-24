@@ -22,8 +22,8 @@
 }
 
 h1 {
-  font-size: 3.2rem;
-  line-height: 4.4rem;
+  font-size: 3rem;
+  line-height: 4rem;
   font-weight: 600;
   margin-bottom: 1.7rem;
 }
@@ -42,6 +42,7 @@ h3 {
 }
 
 p {
+  font-size: 1rem;
   margin-bottom: 1.7rem;
 }
 
