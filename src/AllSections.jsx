@@ -16,11 +16,8 @@ const AllSections = ({ mode }) => {
                     <h1>Hey✨ I’m Ana, Frontend React Developer</h1>
                     <p>
                         I've been working in the field of{' '}
-                        <span className="bold-p">design</span> and{' '}
-                        <span className="bold-p">web development</span> for over
-                        two years, and I've been entirely dedicated to the{' '}
-                        <span className="bold-p">frontend development</span>{' '}
-                        since June 2022.
+                        <span className="bold-p">web development</span> and{' '}
+                        <span className="bold-p">design</span> for over 2,5 years.
                         <br />
                         <br />
                         In my spare time, I enjoy hanging out with my family,
@@ -63,7 +60,7 @@ const AllSections = ({ mode }) => {
                     <div className="section-contact-links">
                         <p>
                             Liked my work? I’m currently open for remote work
-                            <br /> as Junior+ / Middle Frontend Developer.
+                            <br /> as Frontend React Developer.
                         </p>
                         <div className="button-container">
                             <a
