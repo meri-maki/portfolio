@@ -17,7 +17,8 @@ const AllSections = ({ mode }) => {
                     <p>
                         I've been working in the field of{' '}
                         <span className="bold-p">web development</span> and{' '}
-                        <span className="bold-p">design</span> for over 2,5 years.
+                        <span className="bold-p">design</span> for over 2,5
+                        years.
                         <br />
                         <br />
                         In my spare time, I enjoy hanging out with my family,
@@ -59,8 +60,8 @@ const AllSections = ({ mode }) => {
                 <div className="section-contacts">
                     <div className="section-contact-links">
                         <p>
-                            Liked my work? I’m currently open for remote work
-                            <br /> as Frontend React Developer.
+                            Liked my work? I’m currently open for remote work as
+                            Frontend React Developer.
                         </p>
                         <div className="button-container">
                             <a
