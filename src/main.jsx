@@ -1,8 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import smoothScrollPolyfill from "smoothscroll-polyfill"
-import App from "./App"
-import "./resetNew.css"
+import App from "./app/App"
 import "./index.css"
 
  smoothScrollPolyfill.polyfill() 
