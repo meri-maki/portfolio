@@ -94,8 +94,8 @@ export const projects = (mode) => {
             name: 'Portfolio',
             title: 'Personal Portfolio Website',
             description:
-                'React based portfolio website made with Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs.',
-            stack: 'React, Javascript, CSS modules, Vite',
+                'React based portfolio website made with Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs. App architecture is based on Feature-Sliced Design',
+            stack: 'React, Javascript, CSS modules, Vite, FSD',
             img: (
                 <img
                     src={!mode ? Portfolio : PortfolioDark}
