@@ -77,8 +77,8 @@ const Header = ({ mode, setMode }) => {
                             isOn={mode}
                             handleToggle={() => setMode(!mode)}
                             id="id"
-                            textOn="Dark"
-                            textOff="Light"
+                            textOn={t('head-theme-dark')}
+                            textOff={t('head-theme-light')}
                         />
                     </li>
                     <li>
