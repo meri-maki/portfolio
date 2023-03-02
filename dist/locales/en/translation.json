@@ -1,0 +1,34 @@
+{
+    "name": "Name",
+    "name-placeholder": "Your Name",
+    "message": "Message",
+    "message-placeholder": "Write something nice :)",
+
+    "thank-you": "⭐️ Thank you for the message! I will respond shortly!",
+    "title-skills": "Skills & Tools",
+    "title-projects": "Latest projects",
+    "title-courses": "Courses & Certificates",
+    "title-contact": "Let's work together!",
+
+    "main-header": "Hey✨ I’m Ana, Frontend React Developer",
+    "main-p1": "I've been working in the field of web development and design for over 2,5 years.",
+    "main-p2": "In my spare time, I enjoy hanging out with my family, watching movies and anime, and practicing archery.",
+
+    "contact-btn": "Contact me",
+    "cv-btn": "Download CV",
+    "git-btn": "Show Git Repo",
+    "demo-btn": "Visit Website",
+    "lang-btn": "Ру",
+    "submit-btn": "Submit",
+
+    "head-about": "About",
+    "head-projects": "Projects",
+    "head-contact": "Contact",
+
+    "head-theme-light": "Light",
+    "head-theme-dark": "Dark",
+
+    "head-name": "Ana Zhuravleva",
+
+    "contact-p": "Liked my code? I’m currently open for remote work as Frontend React Developer."
+}
