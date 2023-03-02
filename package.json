@@ -10,8 +10,12 @@
     },
     "dependencies": {
         "@emailjs/browser": "^3.10.0",
+        "i18next": "22.1.2",
+        "i18next-browser-languagedetector": "7.0.1",
+        "i18next-http-backend": "2.0.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-i18next": "12.1.1",
         "react-icons": "^4.7.1",
         "react-router-dom": "^6.4.5",
         "react-scroll": "^1.8.8",

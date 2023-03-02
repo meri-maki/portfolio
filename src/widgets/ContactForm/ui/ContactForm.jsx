@@ -2,10 +2,10 @@ import { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from './ContactForm.module.css'
 import { Button } from '~/shared/UI/Button'
-
-
+import { useTranslation } from 'react-i18next'
 
 const ContactForm = ({ mode }) => {
+    const { t } = useTranslation()
     const [formData, setFormData] = useState({
         user_name: '',
         user_email: '',
@@ -71,14 +71,14 @@ const ContactForm = ({ mode }) => {
                 ref={form}
                 onSubmit={sendEmail}
             >
-                <label>Name</label>
+                <label>{t('name')}</label>
                 <input
                     value={formData.user_name}
                     onChange={handleChange}
                     className={styles.contactFormInput}
                     type="text"
                     name="user_name"
-                    placeholder="Your Name"
+                    placeholder={t('name-placeholder')}
                     required
                 />
                 <label>Email</label>
@@ -91,23 +91,21 @@ const ContactForm = ({ mode }) => {
                     placeholder="YourName@mail.com"
                     required
                 />
-                <label>Message</label>
+                <label>{t('message')}</label>
                 <textarea
                     value={formData.message}
                     onChange={handleChange}
                     className={styles.contactFormArea}
                     name="message"
                     rows="7"
-                    placeholder="Write something nice :)"
+                    placeholder={t('message-placeholder')}
                     required
                 />
                 <Button type="submit" value="Send">
-                    Submit
+                    {t('submit-btn')}
                 </Button>
                 {formSent && (
-                    <p className={styles.messageSent}>
-                        ⭐️ Thank you for the message! I will respond shortly!
-                    </p>
+                    <p className={styles.messageSent}>{t('thank-you')}</p>
                 )}
             </form>
         </div>

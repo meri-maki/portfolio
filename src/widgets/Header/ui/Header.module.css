@@ -32,7 +32,7 @@ li,
   position: relative;
 }
 
-.headerNavList li:not(:last-child):after {
+.headerNavList li:nth-child(1):after,.headerNavList li:nth-child(2):after,.headerNavList li:nth-child(3):after {
   content: "";
   position: absolute;
   width: 0%;
@@ -41,6 +41,7 @@ li,
   transition: all 0.3s ease;
   bottom: 5%;
 }
+
 .headerNavList li:hover::after {
   width: 100%;
   height: 2px;
@@ -61,7 +62,7 @@ li,
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .burgerButton {
     display: flex;
     align-items: center;

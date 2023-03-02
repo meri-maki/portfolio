@@ -20,6 +20,8 @@ export const projects = (mode) => {
             title: 'MERN Stack Social App [LIMITED FUNCTIONALITY]',
             description:
                 'Responsive MERN Stack Social network app with authorization and state management using React, MongoDB and Meterial UI',
+            descriptionRu:
+                'Приложение выполненное на MERN Stack (MongoDB, ExpressJS, ReactJS, NodeJS) с функцией авторизации пользователя, размещением постов и state менеджментом с помощью Redux Toolkit.',
             stack: 'MERN: NodeJS, MongoDB, Mongoose, JsonWebToken, Multer, Yup, React, Redux Toolkit, React Persist, React Router, Formik, React Dropzone, MUI ',
             img: (
                 <img
@@ -35,6 +37,8 @@ export const projects = (mode) => {
             title: 'Metaversus Landing Page',
             description:
                 'Metaversus landing page built with Next.js, React and animated with Framer Motion.',
+            descriptionRu:
+                'Адаптивная верстка сайта на Next.JS и React, анимации выполнены с помощью библиотеки Framer Motion.',
             stack: 'React, Next.js, Tailwind CSS, Framer Motion',
             img: (
                 <img
@@ -50,6 +54,8 @@ export const projects = (mode) => {
             title: 'Typescript Weather Forecast App',
             description:
                 'Weather Forecast app made with React and Typescript. Includes integration with OpenWeatherAPI and additional dependencies such as Tailwind CSS, Tailwind CSS Scrollbar.',
+            descriptionRu:
+                'Приложение имеет интеграцию с OpenWeatherAPI, красивый и простой дизайн, с возможностью удобного поиска местоположения, В приложении можно узнать информации о текущем прогнозе погоды, а так же сведения об осадках, давлении, скорости ветра и тд.',
             stack: 'React, Typescript, OpenWeather API, Vite',
             img: (
                 <img
@@ -65,6 +71,9 @@ export const projects = (mode) => {
             title: 'React Todo App',
             description:
                 'Todo list app with drag and drop feature and local storage, made with React JS (ver.18). Includes integration with Bored API and additional dependencies such as dnd-kit, react-icons, react-confetti, react-textarea-autosize, react-use, react-tooltip.',
+            descriptionRu:
+                'Приложение списка дел с функцией drag-n-drop, local storage и интеграцией с Bored API (выполняет функцию подсказки), выполнено в интересном дизайне с приятными анимациями.',
+
             stack: 'React, Javascript, CSS modules, Bored API, Create React App',
             img: (
                 <img
@@ -80,6 +89,8 @@ export const projects = (mode) => {
             title: 'Ingrad Landing Page',
             description:
                 'Responsive landing page made for Ingrad company as part of digital advertising agency Digitas team. The design and functionality was later used as a base for the main company website.',
+            descriptionRu:
+                'Адаптивная верстка landing page для компании Иград в команде разработки digital-агентства Digitas. Дизайн и функционал использован впоследствии для главного сайта компании.',
             stack: 'HTML, CSS, Javascript',
             img: (
                 <img
@@ -94,8 +105,10 @@ export const projects = (mode) => {
             name: 'Portfolio',
             title: 'Personal Portfolio Website',
             description:
-                'React based portfolio website made with Vite build tool. Includes Lazy loading, light/dark theme switcher and additional dependencies such as react-scroll, react-icons, and integration with EmailJs. App architecture is based on Feature-Sliced Design',
-            stack: 'React, Javascript, CSS modules, Vite, FSD',
+                'React based portfolio website made with Vite build tool. Includes Lazy loading, light/dark theme switcher, internationalization and additional dependencies such as react-scroll, react-icons, and integration with EmailJs. App architecture is based on Feature-Sliced Design',
+            descriptionRu:
+                'Персональное портфолио разработчика с функциями переключения светлой/темной темы и ее автоматического обнаружение, интернационализацией, lazy-loading и формой обратной связи (в интеграции с сервисом EmailJs). Архитектура приложения выстроена на основе Feature-Sliced Design.',
+            stack: 'React, Javascript, CSS modules, Vite, FSD, i18n',
             img: (
                 <img
                     src={!mode ? Portfolio : PortfolioDark}
@@ -105,7 +118,7 @@ export const projects = (mode) => {
             mainLink: 'https://ana-zhuravleva-portfolio.vercel.app/',
             gitLink: 'https://github.com/meri-maki/portfolio',
         },
-        {
+        /*         {
             name: 'SpaceX',
             title: 'SpaceX Dashboard App [IN PROGRESS]',
             description:
@@ -119,7 +132,7 @@ export const projects = (mode) => {
             ),
             mainLink: '',
             gitLink: '',
-        },
+        }, */
     ]
 
     return projectsData

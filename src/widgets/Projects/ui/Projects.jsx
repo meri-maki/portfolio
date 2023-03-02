@@ -10,6 +10,7 @@ const Projects = ({ mode }) => {
                 name={project.name}
                 title={project.title}
                 description={project.description}
+                descriptionRu={project.descriptionRu}
                 stack={project.stack}
                 img={project.img}
                 mainLink={project.mainLink}

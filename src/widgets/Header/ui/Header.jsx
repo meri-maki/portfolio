@@ -1,10 +1,17 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-scroll'
 import { RiMenuFill, RiCloseFill } from 'react-icons/ri'
 import styles from './Header.module.css'
 import { ToggleSwitcher } from '~/widgets/ToggleSwitcher'
+import { Button } from '~/shared/UI/Button'
 
 const Header = ({ mode, setMode }) => {
+    const { t, i18n } = useTranslation()
+
+    const toggle = () => {
+        i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
+    }
     const [burger, setBurger] = useState(false)
     return (
         <header className={styles.header}>
@@ -18,7 +25,7 @@ const Header = ({ mode, setMode }) => {
                         duration={500}
                         to="about"
                     >
-                        Ana Zhuravleva
+                        {t('head-name')}
                     </Link>
                 </div>
 
@@ -38,7 +45,7 @@ const Header = ({ mode, setMode }) => {
                             to="about"
                             onClick={() => setBurger(false)}
                         >
-                            About
+                            {t('head-about')}
                         </Link>
                     </li>
                     <li>
@@ -50,7 +57,7 @@ const Header = ({ mode, setMode }) => {
                             to="projects"
                             onClick={() => setBurger(false)}
                         >
-                            Projects
+                            {t('head-projects')}
                         </Link>
                     </li>
                     <li>
@@ -62,7 +69,7 @@ const Header = ({ mode, setMode }) => {
                             to="contact"
                             onClick={() => setBurger(false)}
                         >
-                            Contact
+                            {t('head-contact')}
                         </Link>
                     </li>
                     <li>
@@ -73,6 +80,11 @@ const Header = ({ mode, setMode }) => {
                             textOn="Dark"
                             textOff="Light"
                         />
+                    </li>
+                    <li>
+                        <Button lang="used" onClick={toggle}>
+                            {t('lang-btn')}
+                        </Button>
                     </li>
                 </ul>
 
