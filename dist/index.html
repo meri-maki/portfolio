@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/apple-touch-icon.17f637ad.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABMFJREFUWEetl3tsFFUUxr/vzu52C6VJU0gFEi3GyrYbXt22BEGCRoOvmiCtJkoiiYgYJT5jtxCSxii7VEK08g9gFErEWGqjYsD3G8XQFdoI7dJAjQkJMSDWYulj5x4zawvb7ex2Fpj/5p5zvvubO+ecey+R5hGpU+Zxz310qeUQzAdwPYgsaPSA7BaRiOFSX2Cw7wD9dRfSaaWyMZVBusJ+bWIXILME/IGCNpB/AtoFwXUkrPEKANkAekWwx4DewuJ1JzIBsQUY6ti4wKD6SCDbFd2vc+aLZ+1Epe21iZgg95gx/TgV7oDAhOAdpVzrUsUk64wBkOjmyVpi32vBKndx8CenXyPRULmpUU9yCcCzSriGxS99MF78GAAzummzFr3f7av9erzgZLsIaHaGHiX5BoBcULaq3u7nWbZ9yFEOSFdDFsy+TfQFn8108kT//o6NN3uUahGBn5BPaQ5Up0rSUSsg0Y23DsV4weOvPXI1AFbs3+2hvFyP2ieQhSJy0NADd9lBjAboCFfCF/yEhFwtgBV/rqsuN8/0filAOYHPeOFUZfLvSFqBUDln1h6+FpOPaEhXwxQx+w4JcKOVE8bM2rWJ+qMBukOFnFH7+7UEsLTkRP1crc2fAXqVqKrE6hgN0B7K4+za89cawNIzO0M1AMPxEqVRPNInRgG0tq52l6UpmasBk9Ztbsk53y6AD4IdRnFwtaWXshXbdr7m0jcBFiJ/UjVv+7Y/U6BYZ301oZsAxJRov9W2HQNI89wiwIgOQy9jVeTDTAGkqdrQs0tPArxBBNtcxcE1zgH2BjaAeHl40l2siqzMFCCeC9HwqxCsszYwZfZPcw7QXHoMYMnwpOdwDlP5RCRli00FN3Q8vFgpfBevDqgHHQFIS8UcaPPoKFHidi6PfJPpKkhXQ642+3riAIIdDgECIWgEkyZrYFXkmYwBBNTRsJXAHoC/XgKQpnlToNTbIPPHiGrxg8hNGu8F+dsYX5F+KP0cHzjSZltJ3XVePeDtiyez4PxlgJayO6Hl80y/yNafrOHy1npbgI7wLZo4GLcR+jJAHRT8gfUgNgBwXzEIsRM5Q09zafu/dhpmZ/hdAA8P2y6OPRE1B+YDshtgUUYQhgfw5r3Au/dvSRUnJ8JrtUZDgj1qm4TSVJIDlW0JrXLULXMKoKeXA+5sk8BXAh7QphkxTZ7O8qosU2SOEqwUYGlSJTWmrQLZW7oV5FNpV2LiZOgZSxxxJuuI6Mr0AM2BHwEsTAtguKF99wNUGf0xCCLK11+R+l6wZ34BPLHTAIzxlKVwMSSnYDy3y3ZBr3JhAYuCx1IDNJU9BiVvJalarddqIpMSxyX/JsjUeY4ACJ6hgWUsqjn0fyWmeKS59GOAlQnmk6CswKA+A5exG8SiSzaXd0D7KvcCuBdAXgrJHg3sdNH1SuKlxb4K9gUmoB9nwfi1y8JsxEXXWq745R/r1dpWoU6tB+I9wxX3iSGAh2ra0HmqxARmUUkBNLMA+Utr6XBNGDzMGXVjzhD2AC0V+dDmHxAMgXySVa3v2Xa198sWwrB6BgohahGrDzu+SY3opcmBBdORPTjAyojtvXBEQBpnT4ShpvGRo12OkiDJydFueCXCTmP+Azh70LQUmSDaAAAAAElFTkSuQmCC"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAhxJREFUOE99k09oE0EUxr/3tkmJKZXWP6g9WIupNCkq2SJYUNCbBbWorbYHPRas1IukYkCCf5pVL148SG9exKSCIOjFo55sagUbk6rQiwgWVNQqbXbmyW5MzOrGOQ3fvPnN972ZIdQMmbf2Ko1RQJoYFNKEEInMKKUng7HkbG1tZU6ViV20DhBkC39rnaSekZKjS2bAsLvj+wwD46J5kX+qsxS/sFgLcgGSSjGGVg3QtsQ9v1Mczc5bJ5mRJK2GKJqc8TiQ+XQHSs0fKTb6vR7A0UuvJ3YzcYY1H6ZowoWUHbyZWEcRr7W6TpyoIrf5h5hOHBcwN5cKxmKplf+dXrumCulbEG4xusaHq0303MaUOQbCWjqau+gHlbc31mulFpSteusBXoHQjCO5zUQQP4guWA805P0/AJmKbwfopbvJVrvoxOxzP4AqpC8BdLzcxPvmZYBOuYWCMCCt5U30CYSl3/pjOjY9UoGpgnUTwOky4O7OdgSMOwD2+DaSA+/Ay4eo/0XerS9eaRM05EQkXI0gGRhg0wJwzgNpaYfeZIoQTxMkB0EIxAcdlyLyxNMDyfYkQHLNcyNrOiEbd/i2gRn7/wLEn4GoF4SnEHwF0IdgWOvOvg8A2mqe7wIJxqjr/MM/ER5tbcTS6i8gpKE7rmIwq5E1zwC4Dm6ILEf6g40B2rBilz4Hu1WRKKWrT7lClky0iQbznv/gp9Xm+QX9qcsVJhIIUAAAAABJRU5ErkJggg=="
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ana Zhuravleva Portfolio</title>
-    <script type="module" crossorigin src="/assets/index.b8207ed6.js"></script>
-    <link rel="stylesheet" href="/assets/index.593e2412.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/apple-touch-icon.17f637ad.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABMFJREFUWEetl3tsFFUUxr/vzu52C6VJU0gFEi3GyrYbXt22BEGCRoOvmiCtJkoiiYgYJT5jtxCSxii7VEK08g9gFErEWGqjYsD3G8XQFdoI7dJAjQkJMSDWYulj5x4zawvb7ex2Fpj/5p5zvvubO+ecey+R5hGpU+Zxz310qeUQzAdwPYgsaPSA7BaRiOFSX2Cw7wD9dRfSaaWyMZVBusJ+bWIXILME/IGCNpB/AtoFwXUkrPEKANkAekWwx4DewuJ1JzIBsQUY6ti4wKD6SCDbFd2vc+aLZ+1Epe21iZgg95gx/TgV7oDAhOAdpVzrUsUk64wBkOjmyVpi32vBKndx8CenXyPRULmpUU9yCcCzSriGxS99MF78GAAzummzFr3f7av9erzgZLsIaHaGHiX5BoBcULaq3u7nWbZ9yFEOSFdDFsy+TfQFn8108kT//o6NN3uUahGBn5BPaQ5Up0rSUSsg0Y23DsV4weOvPXI1AFbs3+2hvFyP2ieQhSJy0NADd9lBjAboCFfCF/yEhFwtgBV/rqsuN8/0filAOYHPeOFUZfLvSFqBUDln1h6+FpOPaEhXwxQx+w4JcKOVE8bM2rWJ+qMBukOFnFH7+7UEsLTkRP1crc2fAXqVqKrE6hgN0B7K4+za89cawNIzO0M1AMPxEqVRPNInRgG0tq52l6UpmasBk9Ztbsk53y6AD4IdRnFwtaWXshXbdr7m0jcBFiJ/UjVv+7Y/U6BYZ301oZsAxJRov9W2HQNI89wiwIgOQy9jVeTDTAGkqdrQs0tPArxBBNtcxcE1zgH2BjaAeHl40l2siqzMFCCeC9HwqxCsszYwZfZPcw7QXHoMYMnwpOdwDlP5RCRli00FN3Q8vFgpfBevDqgHHQFIS8UcaPPoKFHidi6PfJPpKkhXQ642+3riAIIdDgECIWgEkyZrYFXkmYwBBNTRsJXAHoC/XgKQpnlToNTbIPPHiGrxg8hNGu8F+dsYX5F+KP0cHzjSZltJ3XVePeDtiyez4PxlgJayO6Hl80y/yNafrOHy1npbgI7wLZo4GLcR+jJAHRT8gfUgNgBwXzEIsRM5Q09zafu/dhpmZ/hdAA8P2y6OPRE1B+YDshtgUUYQhgfw5r3Au/dvSRUnJ8JrtUZDgj1qm4TSVJIDlW0JrXLULXMKoKeXA+5sk8BXAh7QphkxTZ7O8qosU2SOEqwUYGlSJTWmrQLZW7oV5FNpV2LiZOgZSxxxJuuI6Mr0AM2BHwEsTAtguKF99wNUGf0xCCLK11+R+l6wZ34BPLHTAIzxlKVwMSSnYDy3y3ZBr3JhAYuCx1IDNJU9BiVvJalarddqIpMSxyX/JsjUeY4ACJ6hgWUsqjn0fyWmeKS59GOAlQnmk6CswKA+A5exG8SiSzaXd0D7KvcCuBdAXgrJHg3sdNH1SuKlxb4K9gUmoB9nwfi1y8JsxEXXWq745R/r1dpWoU6tB+I9wxX3iSGAh2ra0HmqxARmUUkBNLMA+Utr6XBNGDzMGXVjzhD2AC0V+dDmHxAMgXySVa3v2Xa198sWwrB6BgohahGrDzu+SY3opcmBBdORPTjAyojtvXBEQBpnT4ShpvGRo12OkiDJydFueCXCTmP+Azh70LQUmSDaAAAAAElFTkSuQmCC"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAhxJREFUOE99k09oE0EUxr/3tkmJKZXWP6g9WIupNCkq2SJYUNCbBbWorbYHPRas1IukYkCCf5pVL148SG9exKSCIOjFo55sagUbk6rQiwgWVNQqbXbmyW5MzOrGOQ3fvPnN972ZIdQMmbf2Ko1RQJoYFNKEEInMKKUng7HkbG1tZU6ViV20DhBkC39rnaSekZKjS2bAsLvj+wwD46J5kX+qsxS/sFgLcgGSSjGGVg3QtsQ9v1Mczc5bJ5mRJK2GKJqc8TiQ+XQHSs0fKTb6vR7A0UuvJ3YzcYY1H6ZowoWUHbyZWEcRr7W6TpyoIrf5h5hOHBcwN5cKxmKplf+dXrumCulbEG4xusaHq0303MaUOQbCWjqau+gHlbc31mulFpSteusBXoHQjCO5zUQQP4guWA805P0/AJmKbwfopbvJVrvoxOxzP4AqpC8BdLzcxPvmZYBOuYWCMCCt5U30CYSl3/pjOjY9UoGpgnUTwOky4O7OdgSMOwD2+DaSA+/Ay4eo/0XerS9eaRM05EQkXI0gGRhg0wJwzgNpaYfeZIoQTxMkB0EIxAcdlyLyxNMDyfYkQHLNcyNrOiEbd/i2gRn7/wLEn4GoF4SnEHwF0IdgWOvOvg8A2mqe7wIJxqjr/MM/ER5tbcTS6i8gpKE7rmIwq5E1zwC4Dm6ILEf6g40B2rBilz4Hu1WRKKWrT7lClky0iQbznv/gp9Xm+QX9qcsVJhIIUAAAAABJRU5ErkJggg=="
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ana Zhuravleva Portfolio</title>
+		<script type="module" crossorigin src="/assets/index.f1278415.js"></script>
+		<link rel="stylesheet" href="/assets/index.593e2412.css">
+	</head>
+	<body>
+		<div id="root"></div>
+		
+	</body>
 </html>

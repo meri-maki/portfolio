@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@emailjs/browser": "^3.10.0",
+        "gsap": "^3.11.4",
         "i18next": "22.1.2",
         "i18next-browser-languagedetector": "7.0.1",
         "i18next-http-backend": "2.0.2",
