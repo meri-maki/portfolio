@@ -1,19 +1,19 @@
-import Todo from "~/shared/assets/todo.png"
-import TodoDark from "~/shared/assets/todo-dark.png"
-import Ingrad from "~/shared/assets/ingrad.png"
-import IngradDark from "~/shared/assets/ingrad-dark.png"
-import Portfolio from "~/shared/assets/portfolio.png"
-import PortfolioDark from "~/shared/assets/portfolio-dark.png"
-/* import Spacex from '~/shared/assets/spacex.png'
-import SpacexDark from '~/shared/assets/spacex-dark.png' */
-import Weather from "~/shared/assets/weather.png"
-import WeatherDark from "~/shared/assets/weather-dark.png"
-import Metaverse from "~/shared/assets/metaverse.svg"
-import MetaverseDark from "~/shared/assets/metaverse-dark.svg"
-import Mern from "~/shared/assets/mern.svg"
-import MernDark from "~/shared/assets/mern-dark.svg"
-import Toon from "~/shared/assets/toon.png"
-import ToonDark from "~/shared/assets/toon-dark.png"
+import Todo from "~/shared/assets/todo.webp"
+import TodoDark from "~/shared/assets/todo-dark.webp"
+import Ingrad from "~/shared/assets/ingrad.webp"
+import IngradDark from "~/shared/assets/ingrad-dark.webp"
+import Portfolio from "~/shared/assets/portfolio.webp"
+import PortfolioDark from "~/shared/assets/portfolio-dark.webp"
+/* import Spacex from '~/shared/assets/spacex.webp'
+import SpacexDark from '~/shared/assets/spacex-dark.webp' */
+import Weather from "~/shared/assets/weather.webp"
+import WeatherDark from "~/shared/assets/weather-dark.webp"
+import Metaverse from "~/shared/assets/metaverse.webp"
+import MetaverseDark from "~/shared/assets/metaverse-dark.webp"
+import Mern from "~/shared/assets/mern.webp"
+import MernDark from "~/shared/assets/mern-dark.webp"
+import Toon from "~/shared/assets/toon.webp"
+import ToonDark from "~/shared/assets/toon-dark.webp"
 
 export const projects = (mode) => {
 	const projectsData = [
