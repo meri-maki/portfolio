@@ -21,14 +21,6 @@ const AllSections = ({ mode }) => {
 						<br />
 						<br />
 						{t('main-p2')}
-						{/* I've been working in the field of{' '}
-                        <span className="bold-p">web development</span> and{' '}
-                        <span className="bold-p">design</span> for over 2,5
-                        years.
-                        <br />
-                        <br />
-                        In my spare time, I enjoy hanging out with my family,
-                        watching movies and anime, and practicing archery. */}
 					</p>
 					<div className="button-container">
 						<Link
